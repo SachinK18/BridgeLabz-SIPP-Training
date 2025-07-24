@@ -1,4 +1,4 @@
-package com.java.GENERICS;
+package dsa.Generics;
 import java.util.*;
 
 abstract class CourseType { abstract String typeName(); }

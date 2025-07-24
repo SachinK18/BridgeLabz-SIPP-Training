@@ -1,5 +1,5 @@
 // Package, imports
-package com.java.GENERICS;
+package dsa.Generics;
 import java.util.*;
 
 abstract class WarehouseItem {

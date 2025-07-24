@@ -1,4 +1,4 @@
-package com.java.GENERICS;
+package dsa.Generics;
 
 
 interface MealPlanner { String getName(); }
