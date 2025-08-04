@@ -56,7 +56,7 @@ class Customer {
     public List<String> getAdoptedPets() { return adoptedPets; }
 }
 
-public class PetAdoptation {
+class PetAdoptation {
     private static Scanner sc = new Scanner(System.in);
     private static Inventory<String> dogInventory = new Inventory<>();
     private static Inventory<String> catInventory = new Inventory<>();
@@ -64,7 +64,6 @@ public class PetAdoptation {
     public static void main(String[] args) {
         initializeInventories();
         while (true) {
-            System.out.println("\n--- Welcome to the Pet Adoption Center ---");
             System.out.println("Select your role:\n1. Customer\n2. Admin\n3. Exit");
             int role = getIntInput("Enter your choice: ");
             switch (role) {
@@ -171,9 +170,9 @@ public class PetAdoptation {
         }
     }
 
-    private static int getIntInput(String prompt) {
+    private static int getIntInput(String input) {
         while (true) {
-            System.out.print(prompt);
+            System.out.print(input);
             try {
                 int val = Integer.parseInt(sc.nextLine());
                 return val;
